@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+}
+
+/* -----------------------------------------------------CABEÇALHO-------------------------------------------------------- */
+/* criadno cabeçalho com links */
+header{
+    background-color: black;
+    width: 98.7vw;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Organizando cabeçalho */
+header>div{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    font-size: 20px;
+}
+
+/* Definindo a cor do site geral */
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Criando e estilizando a main */
+main{
+    width: 98.7vw;
+    height: 98vh;
+    background-image: url(../assents/imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* A do botao */
+.button_cadastrar-se{
+    background-color: #640086;
+    width: 16em;
+    height: 4em;
+    font-size: 1rem;
+    border-radius: 17px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* removendo linha inferior do link no cabeçalho */
+div a{
+    text-decoration: none;
+    color:white
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------PRIMEIRA PARTE DO SITE--------------------------------------------------- */
+
+/* Organizando imagem de fundo */
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Decorando os títulos */
+h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilizando o botão de cadastrar-se */
+button{
+    background-color: #640086;
+    width: 16em;
+    height: 4em;
+    font-size: 1rem;
+    border-radius: 17px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------FORMULÁRIO E IMAGEM GRANDE------------------------------------------------ */
+/* Definindo tamanho e organização da parte de cadastro */
+#cadastro{
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* organizando imagem grande */
+#cadastro>img{
+    margin-top: 30px;
+    width: 40vw;
+    height: 65vh;
+}
+
+/* Base do formulário */
+form{
+    color: white;
+    width: 20rem;
+    height: 27rem;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Tamanho da parte de input */
+label, input{
+    width: 80%;
+}
+
+/*Organizando todas as div dentro do formulário*/
+form>div{
+    display: flex;
+    align-items: center;
+}
+
+/* Definido cor e tamanho do texto de input */
+.user>label>::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Limpando e estilizando quadro de formulário */
+.user>label>input{
+    margin-left: 10px;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    color:white;
+}
+
+/* Estilizando div para input */
+.user{
+    background-color: #242424;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*Separando e organizando idade e tipo de deficiência*/
+.idDef{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+/* Organiza tipo de deficiência */
+.idDef>fieldset{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+}
+
+/*Estilizando quadro de formulário de idade*/
+.iddef2>label>input{
+    width: 4rem;
+    height: 3rem;
+    border: none;
+    background: transparent;
+    color:#fff;
+    outline: none;
+    margin-left: 7px;
+}
+
+.date::-webkit-calendar-picker-indicator {
+    filter: invert(1)
+}
+
+
+/* Estilizado quadro de formulário de tipo de deficiência */
+.iddef2>fieldset>select{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+.iddef2>fieldset{
+    border: none;
+    background: transparent;
+}
+
+/* Estilizando texto de idade */
+.iddef2>label>::placeholder{
+    font-size: 15px;
+}
+
+.iddef2{
+    align-items: center;
+}
+
+#esc {
+    background-color: #242424;
+    color: #fff;
+    border: #242424;
+}
+/* Definindo tamanho do quadro de formulário */
+.iddef2>label>input{
+    height: 2rem;
+    width: 6rem;
+}
+
+/* Estilizando div de input */
+.iddef2{
+    background-color: #242424;
+    width: 9.5rem;
+    height: 3.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+/* --------------BOTÃO DE ENVIO---------------- */
+/* Criando e organizando botão */
+.enviar{
+    width: 20vw; 
+    padding: 10px 0;
+    background: #640086;
+    color: white; 
+    font-size: medium;
+    font-weight: bold;
+    border: none; 
+    border-radius: 8px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+/* Animação do botão */
+.enviar:hover{
+    background: #da6aff;
+    transform: scale(1.15);
+}
+/* -------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+
+footer{
+    background-image: url(../assents/imagens/fundoFooter.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodape{
+    width: 676px;
+    height: 130px;
+    margin-left: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.text_redes_sociais{
+    width: 225px;
+    height: 95px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.bloco_cominput{
+    width: 400px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form_news_letter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #640086;
+    height: 45px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.form_news_letter>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.form_news_letter>input::placeholder{
+    color: #fff;
+}
+
+.form_news_letter>img{
+    width: 45px;
+    height: 40px;
+}
+

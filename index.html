@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assents/style.css">
+    <link rel="icon" href="assents/imagens/Logo access helper.png" type="x-icon">
+    <title>Cadastro - Access Helper</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#main">Início</a>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#footer">Contato</a>
+            <img src="assents/imagens/Logo access helper.png">
+        </div>
+    </header>
+    <main id="main">
+        <div class="frase">
+            <h1>Access Helper, tranformando limitações em <br>
+                possibilidades, rumo a um mundo inclusivo.</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+            <a href="#cadastro" class="button_cadastrar-se">
+                <button>Cadastrar-se</button>
+            </a>
+    </main>
+
+    <section id="cadastro">
+        <form>
+            <h1>Cadastre-se e faça parte da<br>
+                mudança acessível.</h1>
+                <br>
+            <!-- USERNAME -->
+            <div class="user">
+                <label for="username">
+                    <input type="text" placeholder="username:" required="">
+                </label>
+                <img src="assents/imagens/us.png" alt="">
+            </div>
+            <!-- EMAIL -->
+            <div class="user">
+                <label for="email">
+                    <input type="email" required="seuemail@dominio.com" placeholder="email:">
+                </label>
+                <img src="assents/imagens/email.png">
+            </div>
+
+            <!-- SENHA -->
+            <div class="user">
+                <label for="senha">
+                    <input type="password" placeholder="senha:" required="">
+                </label>
+                <img src="assents/imagens/lock.png">
+            </div>
+            
+
+            <!-- DATA E DEFICIENCIA -->
+            <div class="idDef">
+                <div class="iddef2">
+                    <label for="idade">
+                        <input type="date" id="idade" placeholder="Idade" class="date">
+                    </label>
+                </div>
+
+                <div class="iddef2">
+                    <fieldset>
+                        <select required>
+                            <option disabled selected hidden id="tpdf">Tipo de Deficiência</option>
+                            <option id="esc">Física</option>
+                            <option id="esc">Mental</option>
+                            <option id="esc">Auditiva</option>
+                            <option id="esc">Visual</option>
+                            <option id="esc">Múltipla</option>
+                        </select>
+                    </fieldset>  
+                </div>
+            </div>
+            
+            <input type="submit" value="concluir cadastro" class="enviar">
+        </form>
+        <img src="assents/imagens/Group.png">
+    </section>
+
+    <footer id="footer">
+        <div class="rodape">
+            <div class="text_redes_sociais">
+                <h1>Access Helper</h1>
+                <h3>Acesse nossas redes <br> sociais</h3>
+            </div>
+            <div class="bloco_cominput">
+                <h4>Inscreva-se para o nosso newsletter</h4>
+                <div class="form_news_letter">
+                    <input type="email" placeholder="cadastre-se no nosso news letter" required="seuemail@gmail.com">
+                    <img src="assents/imagens/email.png">
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
