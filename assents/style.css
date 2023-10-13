@@ -32,7 +32,7 @@ body{
 /* Criando e estilizando a main */
 main{
     width: 98.7vw;
-    height: 98vh;
+    height: 50rem;
     background-image: url(../assents/imagens/fundo.jpg);
     background-repeat: no-repeat;
     display: flex;
@@ -254,7 +254,7 @@ form>div{
 
 footer{
     background-image: url(../assents/imagens/fundoFooter.png);
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
     color: white;
